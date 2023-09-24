@@ -1,0 +1,25 @@
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myInput{
+    padding: 10px ;
+    margin: 10px;
+    background-color: azure;
+    border-radius: 11px;
+    width: 400px;
+}
+.btn{
+    padding:5px;
+    margin: 10px;
+    background-color: rgb(223, 155, 155);
+    border-radius: 4px;
+    width: 100px;
+}
