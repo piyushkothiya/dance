@@ -39,9 +39,9 @@ app.get("/contact", (req, res)=>{
 app.post('/contact',(req,res)=>{
 var myData= new contact(req.body);
 myData.save().then(()=>{
-    res.send("your data has been saved to database")
+  //  res.send("your data has been saved to database")
     //if you want to show page after sucessfull form submit use below page
-    // res.status(200).render('home.pug');
+     res.status(200).render('contact.pug');
 }).catch(()=>{
     res.status(400).send("Your data not saved")
 })
