@@ -1,0 +1,18 @@
+extends base.pug
+block scripts
+ script (src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+      include ../static/styleContact.css
+
+block content
+    H1 Contact Us
+    form(action= "/contact", class="myForm" method= "post")
+        input(type="text" ,class="myInput",name="name", placeholder="Enter Your name")
+        input(type="email", class="myInput" ,name="email",placeholder="Enter Your email")
+        input(type="number" ,,class="myInput" ,name="number",placeholder="Enter Your Phone number")
+        input(type="number" ,class="myInput",name="age", placeholder="Enter Your age")
+        input(type="gender" ,class="myInput" ,name="gender",placeholder="Enter Your Gender")
+        button.btn 
+            |Submit 
